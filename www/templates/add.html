@@ -1,0 +1,16 @@
+<ion-view view-title="Add Note">
+  <ion-content>
+    <label class="item item-input">
+      <span class="input-label">Date</span>
+      <input type="date" ng-model="note.date">
+    </label>
+    <div class="row">
+      <div class="col">
+        <label class="item item-input text">
+          <textarea rows="20" ng-model="note.note" ng-required></textarea>
+        </label>
+      </div>
+    </div>
+    <button class="button button-full button-positive" ng-click="submit()">Create</button>
+  </ion-content>
+</ion-view>
